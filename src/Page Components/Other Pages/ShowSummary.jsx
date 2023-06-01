@@ -7,6 +7,7 @@ const ShowSummary = () => {
 
   return (
     <div className="w-75 mx-auto my-5">
+      <p className="fw-bold">Summary :</p>
       {parse(state)}
     </div>
   );
