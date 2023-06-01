@@ -6,7 +6,7 @@ const Home = () => {
     const shows = useLoaderData();
 
     return (
-        <div className='w-75 mx-auto'>
+        <div className='w-75 mx-auto mb-5 pb-5'>
             <h1 className='text-center display-3 fw-bold my-5'>All Shows</h1>
 
             <div className='row gy-3'>
