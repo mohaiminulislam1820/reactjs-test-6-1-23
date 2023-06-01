@@ -2,8 +2,9 @@ import { useLoaderData } from 'react-router-dom'
 import Show from './Show';
 
 const Home = () => {
+
     const shows = useLoaderData();
-    console.log(shows);
+
     return (
         <div className='w-75 mx-auto'>
             <h1 className='text-center display-3 fw-bold my-5'>All Shows</h1>

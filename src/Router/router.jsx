@@ -9,9 +9,9 @@ const router = createBrowserRouter([
         element: <App />,
         children: [
             {
-                path:'/',
+                path: '/',
                 element: <Home></Home>,
-                loader: ()=>fetch('https://api.tvmaze.com/search/shows?q=all')
+                loader: () => fetch('https://api.tvmaze.com/search/shows?q=all')
             },
             {
                 path: '/show-summary',

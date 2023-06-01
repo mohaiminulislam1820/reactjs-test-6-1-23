@@ -2,9 +2,9 @@ import { useNavigate } from "react-router-dom";
 
 
 const Show = ({ show }) => {
-    const { genres, name, language } = show;
+    const { genres, name, language, summary } = show;
 
-    const navigate=useNavigate();
+    const navigate = useNavigate();
 
     return (
         <div className="col-sm-12 col-md-6 col-lg-4 col-xl-3 ">
@@ -14,7 +14,7 @@ const Show = ({ show }) => {
                 <p><span className="fw-semibold">Genres :</span> {genres.join(', ')}</p>
                 <p><span className="fw-semibold">Language :</span> {language}</p>
 
-                <button className="btn btn-primary fw-bold mt-2" onClick={()=>navigate('/show-summary')}>View Summary</button>
+                <button className="btn btn-primary fw-bold mt-2" onClick={() => navigate('/show-summary', { state: summary })}>View Summary</button>
             </div>
 
         </div>
